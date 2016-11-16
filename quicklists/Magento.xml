@@ -1,0 +1,20 @@
+<list display="Magento">
+  <action id="Tool_External Tools_Clear var/*" />
+  <action id="QuickList.$Separator$" />
+  <action id="Tool_External Tools_Selenium Server" />
+  <action id="QuickList.$Separator$" />
+  <action id="Tool_External Tools_Report #" />
+  <action id="Tool_External Tools_CE Debug Log" />
+  <action id="Tool_External Tools_CE Exception Log" />
+  <action id="Tool_External Tools_CE System Log" />
+  <action id="Tool_External Tools_CE Install Log" />
+  <action id="QuickList.$Separator$" />
+  <action id="Tool_External Tools_Install Magento2" />
+  <action id="QuickList.$Separator$" />
+  <action id="Tool_External Tools_Link EE" />
+  <action id="Tool_External Tools_Link B2B" />
+  <action id="Tool_External Tools_Link Sample Data CE" />
+  <action id="Tool_External Tools_Link Sample Data EE" />
+  <action id="QuickList.$Separator$" />
+  <action id="Tool_External Tools_Unlink ALL" />
+</list>

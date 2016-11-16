@@ -1,0 +1,9 @@
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="083d6193-dc75-4789-869e-d7e546ffc171" name="http://magento2ce.dev" url="http://magento2ce.dev">
+        <fileTransfer accessType="LOCAL" />
+      </webServer>
+    </option>
+  </component>
+</application>

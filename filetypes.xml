@@ -1,0 +1,11 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="changed_files" type="PLAIN_TEXT" />
+      <mapping pattern="Bulk" type="PLAIN_TEXT" />
+      <mapping pattern="Amqp" type="PLAIN_TEXT" />
+      <mapping ext="dist" type="XML" />
+      <mapping ext="dst" type="XML" />
+    </extensionMap>
+  </component>
+</application>

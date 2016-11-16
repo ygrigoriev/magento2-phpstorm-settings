@@ -1,0 +1,24 @@
+<application>
+  <component name="atlassian-ide-plugin">
+    <option name="bambooConfigurationData">
+      <BambooConfigurationBean>
+        <option name="bambooTooltipOption" value="All build failures and first build success" />
+      </BambooConfigurationBean>
+    </option>
+    <option name="generalConfigurationData">
+      <GeneralConfigurationBean>
+        <option name="anonymousEnhancedFeedbackEnabled" value="false" />
+        <option name="statsCountersMap">
+          <map>
+            <entry key="a" value="0" />
+            <entry key="b" value="0" />
+            <entry key="i" value="0" />
+            <entry key="r" value="0" />
+          </map>
+        </option>
+        <option name="uid" value="1468579269156" />
+        <option name="useIdeaProxySettings" value="false" />
+      </GeneralConfigurationBean>
+    </option>
+  </component>
+</application>

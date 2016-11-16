@@ -1,0 +1,7 @@
+<application>
+  <component name="EditorSettings">
+    <option name="USE_SOFT_WRAPS" value="" />
+    <option name="IS_WHITESPACES_SHOWN" value="true" />
+  </component>
+  <component name="LiveEditOptions" restartIfHotSwapFailed="true" updatePolicy="AUTO" />
+</application>

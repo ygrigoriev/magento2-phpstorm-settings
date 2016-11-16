@@ -1,0 +1,184 @@
+<application>
+  <component name="AppInspectionProfilesVisibleTreeState">
+    <entry key="Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Composer.json</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="CodeStyleSchemes">
+    <option name="CURRENT_SCHEME_NAME" value="Default" />
+  </component>
+  <component name="CvsApplicationLevelConfiguration">
+    <option name="EXT_CONFIGURATION">
+      <value>
+        <option name="CVS_RSH" value="ssh" />
+        <option name="PRIVATE_KEY_FILE" value="" />
+        <option name="ADDITIONAL_PARAMETERS" value="" />
+        <option name="USE_INTERNAL_SSH_IMPLEMENTATION" value="false" />
+      </value>
+    </option>
+    <option name="SSH_CONFIGURATION">
+      <value SSH_TYPE="SSH1, SSH2">
+        <option name="USE_PPK" value="false" />
+        <option name="PATH_TO_PPK" value="" />
+      </value>
+    </option>
+    <option name="LOCAL_CONFIGURATION">
+      <value>
+        <option name="PATH_TO_CVS_CLIENT" value="cvs" />
+      </value>
+    </option>
+    <option name="PROXY_SETTINGS">
+      <value>
+        <option name="USE_PROXY" value="false" />
+        <option name="PROXY_HOST" value="" />
+        <option name="PROXY_PORT" value="8080" />
+        <option name="TYPE" value="0" />
+        <option name="LOGIN" value="" />
+        <option name="PASSWORD" value="" />
+      </value>
+    </option>
+    <option name="SSH_FOR_EXT_CONFIGURATION">
+      <value SSH_TYPE="SSH1, SSH2">
+        <option name="USE_PPK" value="false" />
+        <option name="PATH_TO_PPK" value="" />
+      </value>
+    </option>
+    <option name="PATH_TO_PASSWORD_FILE" value="$userdir/.cvspass" />
+    <option name="TIMEOUT" value="10" />
+    <option name="MAKE_CHECKED_OUT_FILES_READONLY" value="false" />
+    <option name="CHECKOUT_PRUNE_EMPTY_DIRECTORIES" value="true" />
+    <option name="CHECKOUT_KEYWORD_SUBSTITUTION" />
+    <option name="SHOW_RESTORE_DIRECTORIES_CONFIRMATION" value="true" />
+    <option name="ENCODING" value="Default" />
+    <option name="USE_GZIP" value="false" />
+    <option name="DO_OUTPUT" value="false" />
+    <option name="SEND_ENVIRONMENT_VARIABLES_TO_SERVER" value="false" />
+    <option name="SHOW_PATH" value="true" />
+  </component>
+  <component name="PhpRefactoringSettings">
+    <option name="EXTRACT_METHOD_DEFAULT_VISIBILITY" value="protected" />
+    <option name="EXTRACT_FIELD_DEFAULT_VISIBILITY" value="protected" />
+  </component>
+  <component name="RecentTaskRepositories">
+    <JIRA shared="true" url="https://jira.corp.x.com">
+      <option name="apiType" value="REST_2_0" />
+      <commitMessageFormat>{id}: {summary}</commitMessageFormat>
+      <password>df98df9cdf92df92df99df98df9ddfd0dff0dff0dff0</password>
+      <option name="inCloud" value="false" />
+      <option name="jiraVersion" value="6.0.8" />
+      <option name="loginAnonymously" value="false" />
+      <option name="preferredCloseTaskState" />
+      <option name="preferredOpenTaskState" />
+      <option name="searchQuery" value="assignee = currentUser() and resolution = Unresolved order by updated" />
+      <option name="shouldFormatCommitMessage" value="true" />
+      <option name="useHttpAuthentication" value="true" />
+      <option name="useProxy" value="false" />
+      <username>yhryhoriev</username>
+    </JIRA>
+    <Generic shared="false" url="https://bitbucket.org">
+      <commitMessageFormat>TASK-{id} {summary} {description}</commitMessageFormat>
+      <option name="downloadTasksInSeparateRequests" value="false" />
+      <password>df98df9cdf92df92df99df98df9ddf9d</password>
+      <option name="loginAnonymously" value="false" />
+      <option name="loginMethodType" value="POST" />
+      <option name="loginUrl" value="{serverUrl}/account/signin/" />
+      <option name="preferredCloseTaskState" />
+      <option name="preferredOpenTaskState" />
+      <option name="responseHandlers">
+        <XPathResponseHandler>
+          <selectors>
+            <selector name="tasks" path="" />
+            <selector name="id" path="" />
+            <selector name="summary" path="" />
+            <selector name="description" path="" />
+            <selector name="updated" path="" />
+            <selector name="created" path="" />
+            <selector name="closed" path="" />
+            <selector name="issueUrl" path="" />
+            <selector name="singleTask-id" path="" />
+            <selector name="singleTask-summary" path="" />
+            <selector name="singleTask-description" path="" />
+            <selector name="singleTask-updated" path="" />
+            <selector name="singleTask-created" path="" />
+            <selector name="singleTask-closed" path="" />
+            <selector name="singleTask-issueUrl" path="" />
+          </selectors>
+        </XPathResponseHandler>
+        <JsonResponseHandler>
+          <selectors>
+            <selector name="tasks" path="$.issues" />
+            <selector name="id" path="$.local_id" />
+            <selector name="summary" path="$.title" />
+            <selector name="description" path="$.content" />
+            <selector name="updated" path="" />
+            <selector name="created" path="$.created_on" />
+            <selector name="closed" path="" />
+            <selector name="issueUrl" path="$.resource_uri" />
+            <selector name="singleTask-id" path="" />
+            <selector name="singleTask-summary" path="" />
+            <selector name="singleTask-description" path="" />
+            <selector name="singleTask-updated" path="" />
+            <selector name="singleTask-created" path="" />
+            <selector name="singleTask-closed" path="" />
+            <selector name="singleTask-issueUrl" path="" />
+          </selectors>
+        </JsonResponseHandler>
+        <RegExResponseHandler>
+          <option name="taskRegex" value="" />
+        </RegExResponseHandler>
+      </option>
+      <option name="responseType" value="JSON" />
+      <option name="shouldFormatCommitMessage" value="true" />
+      <option name="singleTaskMethodType" value="GET" />
+      <option name="singleTaskUrl" value="https://api.bitbucket.org/1.0/repositories/{username}/board-v2/issues/{id}" />
+      <option name="subtypeName" />
+      <option name="tasksListMethodType" value="GET" />
+      <option name="tasksListUrl" value="https://api.bitbucket.org/1.0/repositories/{username}/board-v2/issues?status=new&amp;status=open" />
+      <option name="templateVariables">
+        <list />
+      </option>
+      <option name="useHttpAuthentication" value="true" />
+      <option name="useProxy" value="false" />
+      <username>ygrigoriev</username>
+    </Generic>
+    <JIRA shared="true" url="https://jira.corp.magento.com">
+      <option name="apiType" value="REST_2_0" />
+      <commitMessageFormat>{id}: {summary}</commitMessageFormat>
+      <password>df98df9cdf92df92df99df98df9ddfc9dfe9dfe9dfe9</password>
+      <option name="inCloud" value="false" />
+      <option name="jiraVersion" value="6.0.8" />
+      <option name="loginAnonymously" value="false" />
+      <option name="preferredCloseTaskState" />
+      <option name="preferredOpenTaskState" />
+      <option name="searchQuery" value="assignee = currentUser() and resolution = Unresolved order by updated" />
+      <option name="shouldFormatCommitMessage" value="true" />
+      <option name="useHttpAuthentication" value="true" />
+      <option name="useProxy" value="false" />
+      <username>yhryhoriev</username>
+    </JIRA>
+  </component>
+  <component name="VcsApplicationSettings">
+    <option name="PATCH_STORAGE_LOCATION" />
+  </component>
+  <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl">
+    <recent_templates>
+      <option name="RECENT_TEMPLATES">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </recent_templates>
+  </component>
+  <component name="com.intellij.openapi.diff.impl.external.DiffManagerImpl" HIGHLIGHT_MODE="BY_WORD" />
+</application>

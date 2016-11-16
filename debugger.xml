@@ -1,0 +1,21 @@
+<application>
+  <component name="XDebuggerSettings">
+    <data-views>
+      <option name="showValuesInline" value="false" />
+      <sort-values>true</sort-values>
+      <show-values-inline>false</show-values-inline>
+    </data-views>
+    <general />
+    <debuggers>
+      <debugger id="javascript">
+        <configuration captureAsyncStackTraces="true">
+          <custom-object-presentation />
+          <stepping-filters>
+            <stepping-filter url-pattern="Interceptor.php" />
+            <stepping-filter url-pattern="C:\migration_tool_2.1\magento2ce\var\generation\Magento\Catalog\Model\ResourceModel\Product\Collection\Interceptor.php" />
+          </stepping-filters>
+        </configuration>
+      </debugger>
+    </debuggers>
+  </component>
+</application>

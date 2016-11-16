@@ -1,0 +1,24 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="Directory '[magento2ce] - ...\app\code\Magento\Sales\Controller\Adminhtml\Order'" />
+    <option name="defaultScopeName" value="Directory '[magento2ce] - ...\app\code\Magento\Sales\Controller\Adminhtml\Order'" />
+    <option name="localRegularExpressions" value="true" />
+    <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
+    <option name="SEARCH_SCOPE" value="Directory '[magento2ce] - ...\app\code\Magento\Sales\Controller\Adminhtml\Order'" />
+    <recentFileMasks>
+      <mask>*.properties</mask>
+      <mask>*.html</mask>
+      <mask>*.jsp</mask>
+      <mask>*.xml</mask>
+      <mask>*.java</mask>
+      <mask>*.js</mask>
+      <mask>*.as</mask>
+      <mask>*.css</mask>
+      <mask>*.mxml</mask>
+      <mask>*.php</mask>
+      <mask>!*.php,!*Test.php</mask>
+      <mask>*.php,!*Test.php</mask>
+      <mask>*php,!*Test.php</mask>
+    </recentFileMasks>
+  </component>
+</application>

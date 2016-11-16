@@ -1,0 +1,163 @@
+<toolSet name="External Tools">
+  <tool name="CE Debug Log" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\OpenServer\modules\git\bin\tail.exe" />
+      <option name="PARAMETERS" value="--lines=50 --follow debug.log" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/var/log/" />
+    </exec>
+  </tool>
+  <tool name="CE Exception Log" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\OpenServer\modules\git\bin\tail.exe" />
+      <option name="PARAMETERS" value="--lines=50 --follow exception.log" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/var/log/" />
+    </exec>
+  </tool>
+  <tool name="CE Install Log" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\OpenServer\modules\git\bin\tail.exe" />
+      <option name="PARAMETERS" value="--lines=50 --follow install.log" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/var/log/" />
+    </exec>
+  </tool>
+  <tool name="Clear di/*, generation/*" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="rm" />
+      <option name="PARAMETERS" value="-rf ./di/* ./generation/* " />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/var/" />
+    </exec>
+  </tool>
+  <tool name="Link Sample Data CE" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="build-sample-data.php --ce-source=&quot;$ProjectFileDir$&quot; --sample-data-source=&quot;C:/Projects/magento2-sample-data&quot; --command=&quot;link&quot; --exclude=true" />
+      <option name="WORKING_DIRECTORY" value="C:/Projects/magento2-sample-data/dev/tools" />
+    </exec>
+  </tool>
+  <tool name="Unlink Sample Data CE" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="build-sample-data.php --ce-source=&quot;$ProjectFileDir$\..\magento2ce&quot; --sample-data-source=&quot;$ProjectFileDir$\..\magento2-sample-data&quot; --command=&quot;unlink&quot; --exclude=true" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/../magento2-sample-data/dev/tools/" />
+    </exec>
+  </tool>
+  <tool name="Link Sample Data EE" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="build-sample-data.php --ce-source=&quot;$ProjectFileDir$\..\magento2ce&quot; --sample-data-source=&quot;$ProjectFileDir$\..\magento2-sample-data-ee&quot; --command=&quot;link&quot; --exclude=true" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/../magento2-sample-data-ee/dev/tools/" />
+    </exec>
+  </tool>
+  <tool name="Unlink Sample Data EE" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="build-sample-data.php --ce-source=&quot;$ProjectFileDir$\..\magento2ce&quot; --sample-data-source=&quot;$ProjectFileDir$\..\magento2-sample-data-ee&quot; --command=&quot;unlink&quot; --exclude=true" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/../magento2-sample-data-ee/dev/tools/" />
+    </exec>
+  </tool>
+  <tool name="Clear var/*" description="Removes all temporary files in ./var directory" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="rm" />
+      <option name="PARAMETERS" value="-rf ./var/[!\.]*" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/" />
+    </exec>
+  </tool>
+  <tool name="Link EE" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="infra-tools edition:build --ce-source=&quot;$ProjectFileDir$&quot; --ee-source=&quot;$ProjectFileDir$\..\magento2ee&quot; --b2b-source=&quot;$ProjectFileDir$\..\magento2b2b&quot; --edition=&quot;ee&quot; --exclude=true --command=&quot;link&quot;" />
+      <option name="WORKING_DIRECTORY" value="C:/Projects/magento2-infrastructure/tools/bin/" />
+    </exec>
+  </tool>
+  <tool name="Link B2B" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="infra-tools edition:build --ce-source=&quot;$ProjectFileDir$\..\magento2ce&quot; --ee-source=&quot;$ProjectFileDir$\..\magento2ee&quot; --b2b-source=&quot;$ProjectFileDir$\..\magento2b2b&quot; --edition=&quot;b2b&quot; --exclude=true --command=&quot;link&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/../magento2-infrastructure/tools/bin/" />
+    </exec>
+  </tool>
+  <tool name="Unlink ALL" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="infra-tools edition:build --ce-source=&quot;$ProjectFileDir$&quot; --ee-source=&quot;C:\Projects\magento2ee&quot; --b2b-source=&quot;C:\Projects\magento2b2b&quot; --edition=&quot;ee&quot; --exclude=true --command=&quot;unlink&quot;" />
+      <option name="WORKING_DIRECTORY" value="C:/projects/magento2-infrastructure/tools/bin/" />
+    </exec>
+  </tool>
+  <tool name="Install Magento2" description="Installs Magento2, backend frontname: backend, username: admin, password: 111111z" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="$PhpExecutable$" />
+      <option name="PARAMETERS" value="$ProjectFileDir$/bin/magento setup:install --base-url=&quot;http://$ProjectName$.dev/&quot; --backend-frontname=&quot;backend&quot; --db-host=&quot;localhost&quot; --db-name=&quot;$ProjectName$&quot; --db-user=&quot;mysql&quot; --db-password=&quot;mysql&quot; --admin-user=&quot;admin&quot; --admin-password=&quot;111111z&quot; --admin-email=&quot;admin@example.com&quot; --admin-firstname=&quot;admin&quot; --admin-lastname=&quot;admin&quot; --language=&quot;en_US&quot; --timezone=&quot;America/Los_Angeles&quot; --currency=&quot;USD&quot; --admin-use-security-key=0 --use-rewrites=1 --session-save=&quot;db&quot;" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="CE System Log" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\OpenServer\modules\git\bin\tail.exe" />
+      <option name="PARAMETERS" value="--lines=50 --follow system.log" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/var/log/" />
+    </exec>
+  </tool>
+  <tool name="Report #" description="Shows clipboard report number" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="cat" />
+      <option name="PARAMETERS" value="$ClipboardContent$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/var/report" />
+    </exec>
+  </tool>
+  <tool name="XDebug-ON" description="Shows report number in clipboard" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="cmd" />
+      <option name="PARAMETERS" value="C:\Help+\xdebug_switcher.bat" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="XDebug-OFF" description="Shows report number in clipboard" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="C:\Help+\xdebug_switcher.bat" />
+      <option name="PARAMETERS" value="0" />
+      <option name="WORKING_DIRECTORY" />
+    </exec>
+  </tool>
+  <tool name="Tasks.txt" description="File for task notes" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files (x86)\JetBrains\PhpStorm 2016.2\bin\PhpStorm64.exe" />
+      <option name="PARAMETERS" value="C:\Users\yhryhoriev\.PhpStorm2016.2\config\scratches\Tasks" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="cygwin" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:/cygwin64/bin/mintty.exe" />
+      <option name="PARAMETERS" value="CHERE_INVOKING=1 /bin/bash -l" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="MySQL execute file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="mysql" />
+      <option name="PARAMETERS" value="-u root magento_mt &lt; C:/Users/yhryhoriev/Desktop/magento_mt.sql" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="Selenium Server" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="java" />
+      <option name="PARAMETERS" value="-jar C:/Help+/MagentoFunctionalTests/selenium-server-standalone-2.53.1.jar -Dwebdriver.gecko.driver=&quot;C:/Program Files (x86)/Google/Chrome/Application/wires.exe&quot;" />
+      <option name="WORKING_DIRECTORY" value="C:/Help+/MagentoFunctionalTests" />
+    </exec>
+  </tool>
+  <tool name="Selenium Server Firefox" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="java" />
+      <option name="PARAMETERS" value="-jar C:/Help+/MagentoFunctionalTests/selenium-server-standalone-2.53.1.jar -webdriver.firefox.bin=&quot;C:/Program Files (x86)/Mozilla Firefox/firefox.exe&quot;" />
+      <option name="WORKING_DIRECTORY" value="C:/Help+/MagentoFunctionalTests" />
+    </exec>
+  </tool>
+  <tool name="sed" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Program Files\Git\usr\bin\sed.exe -i.bak -e 's\/\(;\)\(zend_extension.*php_xdebug.dll&quot;\)/\2/' C:/OpenServer/userdata/config/PHP-7-x64_php.ini" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>

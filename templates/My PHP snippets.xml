@@ -1,0 +1,24 @@
+<templateSet group="My PHP snippets">
+  <template name="pr" value="echo '&lt;pre&gt;'; print_r($END$).'&lt;/pre&gt;'; die;" description="print_r wrapped in &lt;pre /&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="vd" value="var_dump($END$); die;" description="var_dump with die" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="sw" value="switch($PARAM$){&#10;    case $END$:&#10;        break;&#10;    default:&#10;        break;&#10;}" description="switch case" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="phpVar" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fu" value="function ($PARAMETERS$) {&#10;    return $END$;&#10;}" description="function(){}" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAMETERS" expression="phpVar" defaultValue="&quot;$elem&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

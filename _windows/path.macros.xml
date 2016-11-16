@@ -1,0 +1,7 @@
+<application>
+  <component name="PathMacrosImpl">
+    <macro name="HELP_PLUS" value="C:/Help+" />
+    <macro name="MAGENTO_2_CE" value="C:/projects/magento2ce" />
+    <macro name="MAGENTO_2_EE" value="C:/projects/magento2ee" />
+  </component>
+</application>

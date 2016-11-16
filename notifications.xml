@@ -1,0 +1,8 @@
+<application>
+  <component name="NotificationConfiguration" showBalloons="false">
+    <notification groupId="Debugger" displayType="NONE" />
+    <notification groupId="Indexing" />
+    <notification groupId="LESS Compiler Successful Compiles" displayType="TOOL_WINDOW" />
+    <notification groupId="Localization and Internationalization" displayType="NONE" shouldLog="false" />
+  </component>
+</application>

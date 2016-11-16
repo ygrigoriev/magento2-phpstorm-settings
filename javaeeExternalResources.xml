@@ -1,0 +1,9 @@
+<application>
+  <component name="ExternalResourceManagerImpl">
+    <resource url="urn:magento:framework:Data/etc/argument/types.xsd" location="$MAGENTO_2_CE$/lib/internal/Magento/Framework/Data/etc/argument/types.xsd" />
+    <resource url="urn:magento:framework:Module/etc/module.xsd" location="$MAGENTO_2_CE$/lib/internal/Magento/Framework/Module/etc/module.xsd" />
+    <resource url="urn:magento:framework:ObjectManager/etc/config.xsd" location="$MAGENTO_2_CE$/lib/internal/Magento/Framework/ObjectManager/etc/config.xsd" />
+    <resource url="urn:magento:module:Magento_Catalog:etc/product_options.xsd" location="$MAGENTO_2_CE$/app/code/Magento/Catalog/etc/product_options.xsd" />
+    <resource url="urn:magento:module:Magento_Store:etc/config.xsd" location="$MAGENTO_2_CE$/app/code/Magento/Store/etc/config.xsd" />
+  </component>
+</application>
